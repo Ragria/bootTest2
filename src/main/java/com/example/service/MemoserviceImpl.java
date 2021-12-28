@@ -29,8 +29,8 @@ public class MemoserviceImpl implements MemoService {
 	}
 
 	@Override
-	public void delete(int mNo) {
-		memoRepository.deleteById(mNo);
+	public void delete(int id) {
+		memoRepository.deleteById(id);
 	}
 
 }

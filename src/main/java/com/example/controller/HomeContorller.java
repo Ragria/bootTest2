@@ -23,7 +23,7 @@ public class HomeContorller {
 	MemoService memoService;
 	
 	@GetMapping("/")
-	public String index(Model model, @PageableDefault(size = 10, sort = "mNo", direction = Sort.Direction.DESC)Pageable pageable) {
+	public String index(Model model, @PageableDefault(size = 10, sort = "id", direction = Sort.Direction.DESC)Pageable pageable) {
 		
 		Page<Memo> memoList = memoService.findAllPage(pageable);
 		ArrayList<Integer> idx = new ArrayList<Integer>();
@@ -43,8 +43,8 @@ public class HomeContorller {
 	
 	@PostMapping("/insert")
 	public String insert(Memo memo) {
-			if(memo.getMName() == "") {
-				memo.setMName("Anonymous");
+			if(memo.getName() == "") {
+				memo.setName("Anonymous");
 			}
 			memoService.insert(memo);
 		return "redirect:/";

@@ -19,12 +19,12 @@ public class Memo {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int mNo;
+	private int id;
 	
-	private String mName;
+	private String name;
 	
-	private String mContens;
+	private String content;
 	
-	private String password;
+	private String pass;
 	
 }

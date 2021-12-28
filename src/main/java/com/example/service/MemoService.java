@@ -12,6 +12,6 @@ public interface MemoService {
 	
 	public void insert(Memo memo);
 	
-	public void delete(int mNo);
+	public void delete(int id);
 
 }

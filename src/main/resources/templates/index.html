@@ -13,13 +13,13 @@
 					<th>내용</th>
 				</tr>
 				<tr>
-					<td rowspan="2"><textarea rows="5" cols="50" name="mContens"></textarea></td>
+					<td rowspan="2"><textarea rows="5" cols="50" name="content"></textarea></td>
 					<th>이름</th>
-					<td><input type="text" name="mName"></td>	
+					<td><input type="text" name="name"></td>	
 				</tr>
 				<tr>
 					<th>비밀번호</th>
-					<td><input type="password" name="password"></td>
+					<td><input type="password" name="pass"></td>
 					<td><input type="submit" value="글쓰기"></td>
 				</tr>
 				
@@ -36,11 +36,11 @@
 				<th>삭제</th>
 			</tr>
 			<tr th:each="memoList:${memoList}" class="memoList">
-				<td th:text="${memoList.mContens}"></td>
-				<td th:text="${memoList.mName}"></td>
+				<td th:text="${memoList.content}"></td>
+				<td th:text="${memoList.name}"></td>
 				<td>
-					<button class="delete" th:value="${memoList.mNo}" th:text="삭제"></button>
-					<input type="hidden" class="password" th:value="${memoList.password}">
+					<button class="delete" th:value="${memoList.id}" th:text="삭제"></button>
+					<input type="hidden" class="password" th:value="${memoList.pass}">
 				</td>
 			</tr>
 			

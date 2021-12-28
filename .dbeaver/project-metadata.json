@@ -1,1 +1,1 @@
-{"resources":{"Scripts/Script.sql":{"sql-editor-data-source-id":"mysql8-17dd6e34942-18a4de2c5fbd68bb","default-datasource":"mysql8-17dd6e34942-18a4de2c5fbd68bb","default-catalog":"boottest"}}}
+{"resources":{"Scripts/Script.sql":{"default-schema":"public","sql-editor-data-source-id":"postgres-jdbc-17dfe8baa20-719bf593126af0f0","default-datasource":"postgres-jdbc-17dfe8baa20-719bf593126af0f0","default-catalog":"test"}}}
